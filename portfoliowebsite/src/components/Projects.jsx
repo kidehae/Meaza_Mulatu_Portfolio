@@ -6,7 +6,7 @@ import Code from "@mui/icons-material/Code";
 import Book from "@mui/icons-material/Book";
 import Cloud from "@mui/icons-material/Cloud";
 import Checklist from "@mui/icons-material/Checklist";
-import AIpoemGenerator from "../assets/AiPoemGenerator.png";
+import AIpoemGenerator from "../assets/AIPoemGenerator.png";
 import AmazonClone from "../assets/AmazonClone.png";
 import NetflixClone from "../assets/NetflixClone.png";
 import EvangadiForum from "../assets/EvangadiForum.png";
