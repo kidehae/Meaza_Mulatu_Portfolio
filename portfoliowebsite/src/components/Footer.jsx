@@ -105,7 +105,7 @@ export default function Footer() {
         }
         .hover-grow:hover {
           transform: scale(1.2);
-          color: #0d6efd !important;
+          color: rgb(58, 60, 62) !important;
         }
         footer {
           border-top: 1px solid rgba(255, 255, 255, 0.1);
