@@ -1,75 +1,120 @@
 // src/components/Projects.jsx
-import Web from "@mui/icons-material/Web";
-import PhoneAndroid from "@mui/icons-material/PhoneAndroid";
-import DesignServices from "@mui/icons-material/DesignServices";
-import Code from "@mui/icons-material/Code";
-import Book from "@mui/icons-material/Book";
-import Cloud from "@mui/icons-material/Cloud";
-import Checklist from "@mui/icons-material/Checklist";
+import {
+  Language,
+  Security,
+  School,
+  Forum,
+  ShoppingCart,
+  OndemandVideo,
+  AutoStories,
+  WbSunny,
+  Assignment,
+} from "@mui/icons-material";
 import AIpoemGenerator from "../assets/AIPoemGenerator.png";
 import AmazonClone from "../assets/AmazonClone.png";
 import NetflixClone from "../assets/NetflixClone.png";
 import EvangadiForum from "../assets/EvangadiForum.png";
 import WeatherApp from "../assets/WeatherApp.png";
 import TodoListApp from "../assets/TodoListApp.png";
+import INSA from "../assets/INSA.png";
+import DVS from "../assets/DVS.png";
+import YRPS from "../assets/YRPS.png";
 
 const projects = [
   {
     id: 1,
-    title: "AI Poem Generator",
+    title: "Youth Research Publication Platform",
     description:
-      "lightweight web application that crafts unique poems in real-time using vanilla JavaScript and AI. Users input a title or theme, and the app generates creative verses",
-    icon: <Book fontSize="large" />,
-    image: AIpoemGenerator,
-    tags: ["JavaScript", "HTML", "CSS", "AI"],
-    url: "https://aipoemwriter.netlify.app/",
+      "An academic submission system enabling students to upload research papers for peer review, featuring automated rating, acceptance/rejection workflows, and publication management.",
+    icon: <School fontSize="large" />,
+    image: YRPS,
+    tags: ["React", "Node", "Tailwind CSS", "PostgreSQL"],
+    url: "https://yrps-deployment.vercel.app/",
   },
   {
     id: 2,
-    title: "Netflix Clone",
+    title: "Developer Vulnerability Scanner",
     description:
-      "A responsive Netflix interface clone that displays movie recommendations and plays trailers using TMDB API and YouTube integration",
-    icon: <PhoneAndroid fontSize="large" />,
-    image: NetflixClone,
-    tags: ["React", "TMDB API", "YouTube API", "CSS"],
-    url: "https://meazanetflexx.netlify.app/",
+      "A comprehensive Static Application Security Testing (SAST) tool that automatically scans source code for OWASP Top 10 vulnerabilities with detailed vulnerability reports and remediation guidance.",
+    icon: <Security fontSize="large" />,
+    image: DVS,
+    tags: [
+      "Python",
+      "Fast API",
+      "React",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Docker",
+    ],
+    url: "https://github.com/mahi7000/Developer_Vulnerability_Scanner",
   },
+
   {
     id: 3,
-    title: "Amazon Clone",
+    title: "INSA Website Clone",
     description:
-      "A React e-commerce platform using Firebase for real-time data, authentication, and cart management.",
-    icon: <DesignServices fontSize="large" />,
-    image: AmazonClone,
-    tags: ["React", "Firebase", "Material UI", "CSS", "stripe"],
-    url: "https://amazonmeazaclonetwo.netlify.app/",
+      "A fully responsive clone of the INSA institutional website with enhanced UI/UX design, improved navigation, and optimized accessibility features using modern web technologies.",
+    icon: <Language fontSize="large" />,
+    image: INSA,
+    tags: ["React", "Node", "Tailwind CSS", "PostgreSQL"],
+    url: "https://insa-clone.vercel.app/",
   },
   {
     id: 4,
     title: "Evangadi Forum",
     description:
-      " React/Node.js Q/A platform for asking technical questions, voting on solutions, and discussing topics in real-time.",
-    icon: <Code fontSize="large" />,
+      "A full-stack Q&A discussion platform with real-time messaging, upvote/downvote system, JWT authentication, and threaded conversations for technical knowledge sharing.",
+    icon: <Forum fontSize="large" />,
     image: EvangadiForum,
     tags: ["React", "Express", "JWT", "PostgreSQL"],
     url: "https://evangadi-forum-deployment-integrate.vercel.app/",
   },
   {
     id: 5,
-    title: "Weather App",
+    title: "Amazon E-commerce Clone",
     description:
-      "Real-time weather application with 5-day forecasts, location detection, and interactive maps. Pulls data from WeatherAPI.com.",
-    icon: <Cloud fontSize="large" />,
+      "Feature-complete e-commerce platform with Firebase authentication, real-time cart management, Stripe payment integration, and responsive product catalog.",
+    icon: <ShoppingCart fontSize="large" />,
+    image: AmazonClone,
+    tags: ["React", "Firebase", "Material UI", "CSS", "Stripe"],
+    url: "https://amazonmeazaclonetwo.netlify.app/",
+  },
+  {
+    id: 6,
+    title: "Netflix UI Clone",
+    description:
+      "Responsive streaming service interface with TMDB API integration, dynamic movie recommendations, and embedded YouTube trailer playback functionality.",
+    icon: <OndemandVideo fontSize="large" />,
+    image: NetflixClone,
+    tags: ["React", "TMDB API", "YouTube API", "CSS"],
+    url: "https://meazanetflexx.netlify.app/",
+  },
+  {
+    id: 7,
+    title: "AI Poem Generator",
+    description:
+      "Interactive web application leveraging AI algorithms to generate creative poetry in real-time based on user-provided themes or titles with customizable output styles.",
+    icon: <AutoStories fontSize="large" />,
+    image: AIpoemGenerator,
+    tags: ["JavaScript", "HTML", "CSS", "AI"],
+    url: "https://aipoemwriter.netlify.app/",
+  },
+  {
+    id: 8,
+    title: "Weather Forecast Application",
+    description:
+      "Comprehensive weather monitoring app with 5-day forecasts, geolocation services, interactive radar maps, and data visualization using Chart.js.",
+    icon: <WbSunny fontSize="large" />,
     image: WeatherApp,
     tags: ["React", "Context API", "Geolocation", "Chart.js"],
     url: "https://myfirstshecodesweatherappp.netlify.app/",
   },
   {
-    id: 6,
-    title: "To-Do List App",
+    id: 9,
+    title: "Task Management App",
     description:
-      "A localStorage-powered task manager that survives page refreshes and organizes tasks by completion status.",
-    icon: <Checklist fontSize="large" />,
+      "Persistent task organizer with local storage integration, priority categorization, completion tracking, and cross-session data persistence.",
+    icon: <Assignment fontSize="large" />,
     image: TodoListApp,
     tags: ["React", "LocalStorage", "CSS"],
     url: "https://myytodolistapp.netlify.app/",
