@@ -99,6 +99,7 @@ export default function Home() {
               style={{
                 padding: "10px 20px",
                 fontSize: "1.1rem",
+                fontWeight: "700",
                 borderRadius: "8px",
                 border: "none",
                 backgroundColor: "#ffffff",
@@ -111,6 +112,7 @@ export default function Home() {
               }
               onMouseOut={(e) => (e.target.style.backgroundColor = "white")}
             >
+              <Download />
               Download Resume
             </button>
           </div>
